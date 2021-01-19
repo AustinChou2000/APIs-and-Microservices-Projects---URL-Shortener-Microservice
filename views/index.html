@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h2>URL Shortener Microservice</h2>
+
+    <form action="api/shorturl/new" method="POST">
+      <label for="url_input">URL to be shortened</label>
+      <input
+        id="url_input"
+        type="text"
+        name="url"
+        value="https://www.freecodecamp.org"
+      />
+      <input type="submit" value="Shorten" />
+    </form>
+    <p>by <a href="https://nesh.gq">Ganesh H</a></p>
+  </body>
+</html>
